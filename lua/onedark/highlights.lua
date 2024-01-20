@@ -126,8 +126,8 @@ hl.syntax = {
     Title = colors.Cyan,
     Tag = colors.Green,
     Delimiter = colors.LightGrey,
-    Comment = {fg = c.grey, fmt = cfg.code_style.comments},
-    SpecialComment = {fg = c.grey, fmt = cfg.code_style.comments},
+    Comment = {fg = c.cyan, fmt = cfg.code_style.comments},
+    SpecialComment = {fg = c.cyan, fmt = cfg.code_style.comments},
     Todo = {fg = c.red, fmt = cfg.code_style.comments}
 }
 
@@ -138,7 +138,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@attribute.typescript"] = colors.Blue,
         ["@boolean"] = colors.Orange,
         ["@character"] = colors.Orange,
-        ["@comment"] = {fg = c.grey, fmt = cfg.code_style.comments},
+        ["@comment"] = {fg = c.cyan, fmt = cfg.code_style.comments},
         ["@conditional"] = {fg = c.purple, fmt = cfg.code_style.keywords},
         ["@constant"] = {fg = c.orange, fmt = cfg.code_style.constants},
         ["@constant.builtin"] = {fg = c.orange, fmt = cfg.code_style.constants},
@@ -233,7 +233,7 @@ else
         TSAttribute = colors.Cyan,
         TSBoolean = colors.Orange,
         TSCharacter = colors.Orange,
-        TSComment = {fg = c.grey, fmt = cfg.code_style.comments},
+        TSComment = {fg = c.cyan, fmt = cfg.code_style.comments},
         TSConditional = {fg = c.purple, fmt = cfg.code_style.keywords},
         TSConstant = colors.Orange,
         TSConstBuiltin = colors.Orange,
